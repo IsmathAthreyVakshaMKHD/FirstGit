@@ -8,15 +8,15 @@
   </head>
   <body style="margin: 0">
     <!-- Write your code below -->
-    <form>
+    <form onsubmit="handleFormSubmit(event)">
       <label for="userName">Name:</label><br>
-      <input type="text" id="userName" name="userName"><br>
-      <label for="emailId">EmailId</label>
-      <input type="email" id="emailId" name="emailId">
-      <label for="phoneNumber">Phone Number</label>
-      <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+91-12345-67890" pattern="[0-9]{2}[0-9]{5}[0-9]{5}">
+      <input type="text" id="userName" name="userName" required><br>
+      <label for="emailId">EmailId</label><br>
+      <input type="email" id="emailId" name="emailId" required><br>
+      <label for="phoneNumber">Phone Number</label><br>
+      <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+91-12345-67890" pattern="[0-9]{2}[0-9]{5}[0-9]{5}"><br>
       <button type="submit">Submit</button>
     </form>
   </body>
-  <script src="index.js"></script>
+  <script src="Task 12.js"></script>
 </html>
